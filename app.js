@@ -26,7 +26,7 @@ function getMealList() {
                     </div>
                     <div class="meal-name">
                         <h3> ${meal.strMeal}</h3>
-                        <a href="#" class="recipe">Get recipe</a>
+                        <a href="getRecipe" class="recipe">Get recipe</a>
                     </div>
                 </div> 
            
@@ -52,9 +52,9 @@ function getMealRecipe(e){
     }
 }
 
-function mealRecipeModal(meal){
-    console.log(meal);
-    meal = meal[0];
+function mealRecipeModal(meals){
+    console.log(meals);
+    meal = meals[0];
     let html = `
     <div class="meal-details-content">  
         <h2 class="recipe-title">${meal.strMeal}</h2>
